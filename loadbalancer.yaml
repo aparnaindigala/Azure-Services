@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: deployment
+  namespace: "gitdep"
   labels:
     app: dep1
 spec:
@@ -24,11 +25,11 @@ apiVersion: v1
 kind: Service
 metadata:
  name: lbservice
+ namespace: "gitdep"
 spec:
  selector:
   app: dep1
  ports:
   - port: 8082
-    targetPort: 80
  type: LoadBalancer
 
