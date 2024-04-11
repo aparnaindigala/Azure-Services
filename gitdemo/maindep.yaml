@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: pod1
-        image: redis:latest
+        image: nginx:latest
         ports:
         - containerPort: 80
 ---
