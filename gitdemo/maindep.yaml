@@ -24,7 +24,7 @@ spec:
         - containerPort: 80
         env:
         - name: TITLE
-          value: "Welcome to Azure Kubernetes Service (AKS)"image: nginx:latest
+          value: "Welcome to Azure Kubernetes Service (AKS)"
        
        
     
