@@ -18,12 +18,10 @@ spec:
     spec:
       containers:
       - name: aks-helloworld
-        image: mcr.microsoft.com/azuredocs/aks-helloworld:v1
+        image: nginx:latest
         ports:
         - containerPort: 80
-        env:
-        - name: TITLE
-          value: "Welcome to Azure Kubernetes Service (AKS)"
+       
     
 ---
 apiVersion: v1
